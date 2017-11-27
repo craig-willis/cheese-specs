@@ -1,0 +1,29 @@
+{
+    "key": "hstts",
+    "label": "HSTS",
+    "description": "A demonstration of a web security policy",
+    "logo": "/asset/png/logos/hsts.png",
+    "image": {
+        "name": "cheese/heartbleed",
+        "tags": [
+            "latest"
+        ]
+    },
+    "display": "stack",
+    "access": "external",
+    "ports": [
+        {
+            "port": 80,
+            "protocol": "http",
+            "contextPath": "/"
+        }
+    ],
+    "readinessProbe": {
+        "type": "http",
+        "path": "/static/base/images/favicon.ico",
+        "port": 8888,
+        "initialDelay": 5,
+        "timeout": 600
+    },
+    "tags": ["1"]
+}

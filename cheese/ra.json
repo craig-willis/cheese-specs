@@ -1,0 +1,29 @@
+{
+    "key": "ra",
+    "label": "Resource Authorization".
+    "description": "A demonstration of resource authorization protection",
+    "logo": "/asset/png/logos/heartbleed.png",
+    "image": {
+        "name": "cheese/heartbleed",
+        "tags": [
+            "latest"
+        ]
+    },
+    "display": "stack",
+    "access": "external",
+    "ports": [
+        {
+            "port": 80,
+            "protocol": "http",
+            "contextPath": "/"
+        }
+    ],
+    "readinessProbe": {
+        "type": "http",
+        "path": "/static/base/images/favicon.ico",
+        "port": 8888,
+        "initialDelay": 5,
+        "timeout": 600
+    },
+    "tags": ["2"]
+}
