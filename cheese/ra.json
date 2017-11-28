@@ -1,6 +1,6 @@
 {
     "key": "ra",
-    "label": "Resource Authorization".
+    "label": "Resource Authorization",
     "description": "A demonstration of resource authorization protection",
     "logo": "/asset/png/logos/heartbleed.png",
     "image": {
